@@ -3,12 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - 
@@ -40,4 +41,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Behind Behind Behind Player
+    uniqueID: 2404859495
+    locked: 0
+  - name: Behind Behind Player
+    uniqueID: 738300433
+    locked: 0
+  - name: Behind Player
+    uniqueID: 1150975723
+    locked: 0
+  - name: Player
+    uniqueID: 3568103107
+    locked: 0
+  - name: In Front of Player
+    uniqueID: 1371660803
     locked: 0
