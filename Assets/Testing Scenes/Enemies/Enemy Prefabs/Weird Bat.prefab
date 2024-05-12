@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 6853297433354875087}
   - component: {fileID: 4645715645346269836}
   m_Layer: 0
-  m_Name: Bat
+  m_Name: Weird Bat
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
