@@ -113,12 +113,12 @@ TextureImporter:
       name: lights_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256
-        width: 32
-        height: 32
+        x: 8
+        y: 228
+        width: 16
+        height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,12 +134,12 @@ TextureImporter:
       name: lights_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 256
-        width: 32
-        height: 32
+        x: 44
+        y: 199
+        width: 8
+        height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,57 +152,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lights_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f4a10afd55ddb6b45bb3025efa784e4c
-      internalID: -623240384
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lights_3
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87868ed7decc2fa4f93981f38fe729d4
-      internalID: 40557166
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: lights_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
-        width: 32
-        height: 32
+        x: 13
+        y: 193
+        width: 6
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,57 +173,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lights_5
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e126edc2266f1d458f6f8f1480832fd
-      internalID: -730763555
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lights_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ff14aac6c550b1b42a195b90fc86b901
-      internalID: 213408770
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: lights_7
       rect:
         serializedVersion: 2
-        x: 32
-        y: 160
-        width: 32
-        height: 32
+        x: 24
+        y: 132
+        width: 16
+        height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -278,57 +194,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lights_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 000eb994fe42bc44b850c5f6d0bbb27e
-      internalID: 1941241349
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lights_9
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d276e550285a944294caa00ca84de62
-      internalID: -419898673
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: lights_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
-        width: 32
-        height: 32
+        x: 29
+        y: 97
+        width: 6
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -341,36 +215,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lights_11
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c50c877a35677f42b3df63ef8dcd99e
-      internalID: -1906360910
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: lights_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
-        width: 32
-        height: 32
+        x: 28
+        y: 7
+        width: 8
+        height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -378,111 +231,6 @@ TextureImporter:
       bones: []
       spriteID: 5b2bdda449fcf8d48b3d6478cd5ba513
       internalID: -1223223207
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lights_13
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cfbf0e18627259e438d5592258c9d2f8
-      internalID: 1548478440
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lights_14
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 016dd473f8742534ea813c6b4de9759c
-      internalID: 1936748173
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lights_15
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3076bf9674b5f474592d9056e8053487
-      internalID: -2107816833
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lights_16
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3225342ad05ce5b47a12c9e200e60d2f
-      internalID: -151713631
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lights_17
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c41bc86a90ebca46a8c6da7521fc8b5
-      internalID: 228839833
       vertices: []
       indices: 
       edges: []
