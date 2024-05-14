@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "temple-of-the-void.sln"
+    "dotnet.defaultSolution": "Temple of the Void.sln"
 }
