@@ -4,8 +4,8 @@ using UnityEngine.InputSystem;
 public class TeleportOnRightClick : MonoBehaviour
 {
     public float maxTeleportDistance = 5f;
-    private float cooldown = 2f; 
-    private float lastTeleportTime = -2f; 
+    public float cooldown = 2f; 
+    public float lastTeleportTime = -2f; 
 
     void Update()
     {
