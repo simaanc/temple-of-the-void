@@ -33,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 2106362377286919799}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.36, y: 0.63, z: 0}
+  m_LocalPosition: {x: -5.3600006, y: 0.07948476, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: -726864189
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: -326104138, guid: 4f0b831f7d57a401691c91eb287d2d70, type: 3}
+  m_Sprite: {fileID: -1928637131, guid: 4f0b831f7d57a401691c91eb287d2d70, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -168,7 +168,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxTeleportDistance: 10
   cooldown: 2
-  lastTeleportTime: -2
 --- !u!114 &5574828049712489060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,6 +182,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 4809321863456429947, guid: 373b993bd63082f4d88f24da1a1b2350, type: 3}
   projectileSpeed: 10
+  shootingCooldown: 0.5
+  spawnOffset: {x: 0.5, y: 0.5}
 --- !u!114 &6456586196698933872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,7 +212,7 @@ MonoBehaviour:
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
-  m_SplitScreenIndex: -1
+  m_SplitScreenIndex: 0
   m_Camera: {fileID: 0}
 --- !u!210 &6355723402542839202
 SortingGroup:

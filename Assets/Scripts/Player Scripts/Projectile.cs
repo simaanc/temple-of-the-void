@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+    public int damage = 1; // The amount of damage the bullet deals
+
     void OnCollisionEnter2D(Collision2D collision)
     {
-        // Optionally, add checks for specific collision tags if needed, e.g.:
-        // if (collision.collider.tag == "Enemy")
-        Destroy(gameObject); // Destroy this projectile
+        Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+        if (enemy != null)
+        {
+            enemy.TakeDamage(damage);
+        }
+
+        // Destroy the bullet on impact
+        Destroy(gameObject);
     }
 }
