@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - OutsideTiles
   - InsideTiles
+  - Obstacle
   layers:
   - Default
   - TransparentFX
