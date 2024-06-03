@@ -3,20 +3,20 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public int maxHealth = 3; // The enemy's maximum health
-    private int currentHealth;
+    public int currentHealth; // Make currentHealth public
 
     void Start()
     {
-        currentHealth = maxHealth;
+        currentHealth = maxHealth; // Initialize currentHealth
     }
 
     public void TakeDamage(int amount)
     {
-        currentHealth -= amount;
+        currentHealth -= amount; // Reduce health by the damage amount
 
         if (currentHealth <= 0)
         {
-            Die();
+            Die(); // Call Die() if health is 0 or less
         }
     }
 
