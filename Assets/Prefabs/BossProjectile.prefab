@@ -432,6 +432,7 @@ GameObject:
   - component: {fileID: 1426427474460895102}
   - component: {fileID: 8524390720116209046}
   - component: {fileID: 173226312822627652}
+  - component: {fileID: -3689938687934943839}
   m_Layer: 0
   m_Name: BossProjectile
   m_TagString: Untagged
@@ -535,3 +536,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   lifetime: 5
+--- !u!210 &-3689938687934943839
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215140886643301673}
+  m_Enabled: 1
+  m_SortingLayerID: 1538727585
+  m_SortingLayer: 6
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
