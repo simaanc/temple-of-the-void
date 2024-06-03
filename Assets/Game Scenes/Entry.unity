@@ -214,7 +214,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Dummy Room
-  offsetX: 1
 --- !u!1 &191747717
 GameObject:
   m_ObjectHideFlags: 0
@@ -15535,7 +15534,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Room 1
-  offsetX: 1
 --- !u!4 &675959254
 Transform:
   m_ObjectHideFlags: 0
@@ -15596,23 +15594,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!1 &717512504 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5434125575354291777, guid: a933bacc5785e42c9ab8547eeffba80d, type: 3}
-  m_PrefabInstance: {fileID: 2073224886}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &717512509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 717512504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84fb9b8793a779541b9f380a7dc46732, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1258466555
 GameObject:
   m_ObjectHideFlags: 0
@@ -19928,7 +19909,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Outside
-  offsetX: 1
 --- !u!61 &1346870344
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30757,7 +30737,7 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1001 &2073224886
+--- !u!1001 &2096859370
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -30773,13 +30753,17 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3246124403615550394, guid: a933bacc5785e42c9ab8547eeffba80d, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5843167031482246281, guid: a933bacc5785e42c9ab8547eeffba80d, type: 3}
       propertyPath: orthographic size
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6100932354197155040, guid: a933bacc5785e42c9ab8547eeffba80d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.95
+      value: -10.89
       objectReference: {fileID: 0}
     - target: {fileID: 6100932354197155040, guid: a933bacc5785e42c9ab8547eeffba80d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30832,16 +30816,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5434125575354291777, guid: a933bacc5785e42c9ab8547eeffba80d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 717512509}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a933bacc5785e42c9ab8547eeffba80d, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1346524852}
-  - {fileID: 2073224886}
   - {fileID: 533888611}
   - {fileID: 513056712}
+  - {fileID: 2096859370}

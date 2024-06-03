@@ -263,7 +263,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Room 1
-  offsetX: 1
 --- !u!1 &517755639
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,7 +296,7 @@ Transform:
   - {fileID: 364257546}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &565714150
+--- !u!1001 &592258662
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -317,21 +316,17 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3246124403615550394, guid: a933bacc5785e42c9ab8547eeffba80d, type: 3}
-      propertyPath: m_FlipY
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5843167031482246281, guid: a933bacc5785e42c9ab8547eeffba80d, type: 3}
       propertyPath: orthographic size
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6100932354197155040, guid: a933bacc5785e42c9ab8547eeffba80d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 23.56
+      value: 23.68
       objectReference: {fileID: 0}
     - target: {fileID: 6100932354197155040, guid: a933bacc5785e42c9ab8547eeffba80d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.89
+      value: -2.76
       objectReference: {fileID: 0}
     - target: {fileID: 6100932354197155040, guid: a933bacc5785e42c9ab8547eeffba80d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -380,28 +375,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5434125575354291777, guid: a933bacc5785e42c9ab8547eeffba80d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 565714152}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a933bacc5785e42c9ab8547eeffba80d, type: 3}
---- !u!1 &565714151 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5434125575354291777, guid: a933bacc5785e42c9ab8547eeffba80d, type: 3}
-  m_PrefabInstance: {fileID: 565714150}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &565714152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 565714151}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84fb9b8793a779541b9f380a7dc46732, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &614029026
 GameObject:
   m_ObjectHideFlags: 0
@@ -35694,7 +35669,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Room 3
-  offsetX: 1
 --- !u!61 &2092187404
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35746,4 +35720,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 233860}
   - {fileID: 517755640}
-  - {fileID: 565714150}
+  - {fileID: 592258662}
