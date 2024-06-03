@@ -17,6 +17,9 @@ public class BossAI : MonoBehaviour
     public float maxRetreatDuration = 4f;
     public float minAngleOffset = -30f;
     public float maxAngleOffset = 30f;
+    public LayerMask obstacleLayer;  // Layer mask for tagged tiles
+    public float obstacleAvoidanceDistance = 1f; // Minimum distance to keep from obstacles
+    public int raysCount = 8; // Number of rays to cast for obstacle detection
 
     private bool isAttacking = true;
     private float timer;
@@ -66,7 +69,6 @@ public class BossAI : MonoBehaviour
         attackDistance = Random.Range(minAttackDistance, maxAttackDistance);
         retreatDistance = Random.Range(minRetreatDistance, maxRetreatDistance);
 
-        // Set random attack and retreat directions
         attackDirection = GetRandomDirection(player.position - transform.position);
         retreatDirection = GetRandomDirection(transform.position - player.position);
     }
@@ -81,9 +83,14 @@ public class BossAI : MonoBehaviour
     {
         float distance = Vector3.Distance(transform.position, player.position);
 
-        if (distance > attackDistance)
+        if (distance > attackDistance && !IsObstacleInDirection(attackDirection))
         {
-            transform.position += attackDirection * swoopSpeed * Time.deltaTime;
+            MoveInDirection(attackDirection, swoopSpeed);
+        }
+        else
+        {
+            AdjustDirection(ref attackDirection);
+            MoveInDirection(attackDirection, swoopSpeed);
         }
     }
 
@@ -91,9 +98,56 @@ public class BossAI : MonoBehaviour
     {
         float distance = Vector3.Distance(transform.position, player.position);
 
-        if (distance < retreatDistance)
+        if (distance < retreatDistance && !IsObstacleInDirection(retreatDirection))
         {
-            transform.position += retreatDirection * retreatSpeed * Time.deltaTime;
+            MoveInDirection(retreatDirection, retreatSpeed);
         }
+        else
+        {
+            AdjustDirection(ref retreatDirection);
+            MoveInDirection(retreatDirection, retreatSpeed);
+        }
+    }
+
+    bool IsObstacleInDirection(Vector3 direction)
+    {
+        for (int i = 0; i < raysCount; i++)
+        {
+            float angle = i * 360f / raysCount;
+            Vector3 rayDirection = Quaternion.Euler(0, 0, angle) * direction;
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, rayDirection, obstacleAvoidanceDistance, obstacleLayer);
+            if (hit.collider != null)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    void MoveInDirection(Vector3 direction, float speed)
+    {
+        Vector3 newPosition = transform.position + direction * speed * Time.deltaTime;
+        transform.position = newPosition;
+    }
+
+    void AdjustDirection(ref Vector3 direction)
+    {
+        for (int i = 1; i <= raysCount / 2; i++)
+        {
+            Vector3 leftDirection = Quaternion.Euler(0, 0, i * (360f / raysCount)) * direction;
+            Vector3 rightDirection = Quaternion.Euler(0, 0, -i * (360f / raysCount)) * direction;
+
+            if (!IsObstacleInDirection(leftDirection))
+            {
+                direction = leftDirection;
+                return;
+            }
+            if (!IsObstacleInDirection(rightDirection))
+            {
+                direction = rightDirection;
+                return;
+            }
+        }
+        direction = -direction; // Fallback if all directions are blocked
     }
 }
