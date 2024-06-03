@@ -23,4 +23,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game Scenes/Dummy Room.unity
     guid: 4624f0f7dc6b42245bae7bb2f97ede7c
+  - enabled: 1
+    path: Assets/Game Scenes/Room 2.unity
+    guid: 3edb6926ab1dd3c4b88e850ec8adaf34
+  - enabled: 1
+    path: Assets/Game Scenes/Room 3.unity
+    guid: f04fe4b19260cfd48b9c23d7e28e2d9e
+  - enabled: 1
+    path: Assets/Game Scenes/Room 4 (maybe).unity
+    guid: 55c71ab3b0142e6429e92af852a8578f
   m_configObjects: {}
