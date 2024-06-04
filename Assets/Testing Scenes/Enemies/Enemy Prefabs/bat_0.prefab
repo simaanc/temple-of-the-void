@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 2434021769508636713}
   - component: {fileID: 5427013784207971438}
   - component: {fileID: 7246232476969252531}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bat_0
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -211,5 +211,9 @@ MonoBehaviour:
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 64
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
   stuckThreshold: 0.1
   unstuckDuration: 1
+  radiusOfView: 5
