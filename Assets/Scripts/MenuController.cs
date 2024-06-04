@@ -8,6 +8,7 @@ public class MenuController : MonoBehaviour
     public static bool isPaused = false;
     public GameObject HUD;
     public GameObject pauseMenu;
+    public AudioSource audiosource;
     
 
     public void SceneSwapper(string sceneName)
@@ -37,5 +38,15 @@ public class MenuController : MonoBehaviour
             Time.timeScale = 1f;
             HUD.SetActive(true);
         }
+    }
+
+    public void playSound()
+    {
+        audiosource.mute = false;
+    }
+
+    public void muteSound()
+    {
+        audiosource.mute = true;
     }
 }
