@@ -9,6 +9,13 @@ public class SceneController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            // Save player's position with scene name
+            Vector2 playerPosition = other.transform.position;
+            string currentSceneName = SceneManager.GetActiveScene().name;
+            PlayerPrefs.SetFloat(currentSceneName + "_PlayerX", playerPosition.x);
+            PlayerPrefs.SetFloat(currentSceneName + "_PlayerY", playerPosition.y);
+            PlayerPrefs.Save();
+
             SceneManager.LoadScene(sceneToLoad);
         }
     }
