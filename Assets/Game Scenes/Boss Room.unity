@@ -147,6 +147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   currentHealth: 0
+  isBoss: 0
   healthBar: {fileID: 0}
 --- !u!1 &157591170
 GameObject:
@@ -24554,6 +24555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   currentHealth: 0
+  isBoss: 0
   healthBar: {fileID: 0}
 --- !u!1001 &573764016
 PrefabInstance:
@@ -39661,6 +39663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   currentHealth: 0
+  isBoss: 0
   healthBar: {fileID: 0}
 --- !u!1 &1418244730 stripped
 GameObject:
@@ -39686,6 +39689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   currentHealth: 0
+  isBoss: 0
   healthBar: {fileID: 0}
 --- !u!1 &1456649841
 GameObject:
@@ -39827,6 +39831,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   currentHealth: 0
+  isBoss: 0
   healthBar: {fileID: 0}
 --- !u!1001 &1599158206
 PrefabInstance:
@@ -39890,6 +39895,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6100932354197155040, guid: a933bacc5785e42c9ab8547eeffba80d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639890054664773358, guid: a933bacc5785e42c9ab8547eeffba80d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639890054664773358, guid: a933bacc5785e42c9ab8547eeffba80d, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8995367922647557384, guid: a933bacc5785e42c9ab8547eeffba80d, type: 3}
@@ -41383,6 +41396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   currentHealth: 0
+  isBoss: 0
   healthBar: {fileID: 0}
 --- !u!1 &1917191865
 GameObject:
@@ -41612,6 +41626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 22
   currentHealth: 0
+  isBoss: 1
   healthBar: {fileID: 866031721}
 --- !u!1 &2003740380
 GameObject:
@@ -41712,6 +41727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   currentHealth: 0
+  isBoss: 0
   healthBar: {fileID: 0}
 --- !u!1 &2021120288
 GameObject:

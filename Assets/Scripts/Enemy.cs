@@ -1,11 +1,10 @@
-using UnityEditor.Callbacks;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Enemy : MonoBehaviour
 {
-    public int maxHealth = 3; // The enemy's maximum health
-    public int currentHealth; // Make currentHealth public
-
+    public int maxHealth = 3;
+    public int currentHealth; 
+    public bool isBoss;
     Rigidbody2D rb;
 
     [SerializeField] FloatingHealthBar healthBar;
@@ -18,6 +17,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth; // Initialize currentHealth
+        healthBar.UpdateHealthBar(currentHealth, maxHealth); // Update health bar at start
     }
 
     public void TakeDamage(int amount)
@@ -32,6 +32,10 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
+        if (isBoss) // Check if the enemy is a boss
+        {
+            SceneManager.LoadScene("Winning Scene");
+        }
         Destroy(gameObject); // Destroy the enemy object
     }
 }
