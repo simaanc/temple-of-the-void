@@ -24663,6 +24663,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1519700062}
+    - target: {fileID: 4058780370232959557, guid: 90644943e7f0c644e8cfc5333ef8e54f, type: 3}
+      propertyPath: fireRate
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9109510675770268505, guid: 90644943e7f0c644e8cfc5333ef8e54f, type: 3}
       propertyPath: m_SortingLayer
       value: 5
@@ -41610,7 +41614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df450f9114a5a400287c169820e30613, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 22
+  maxHealth: 24
   currentHealth: 0
   healthBar: {fileID: 866031721}
 --- !u!1 &2003740380
