@@ -12,9 +12,19 @@ public class MonsterMovement : MonoBehaviour
     public bool isChasing;
     public float chaseDistance;
 
+    private Rigidbody2D rb;
+    private Animator animator;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+    }
     // Update is called once per frame
     void Update()
     {
+        animator.SetFloat("Speed", Mathf.Abs(moveSpeed));
+        
         if (isChasing)
         {
             if (transform.position.x > playerTransform.position.x)

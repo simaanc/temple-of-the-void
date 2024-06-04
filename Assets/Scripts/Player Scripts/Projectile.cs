@@ -13,6 +13,11 @@ public class Projectile : MonoBehaviour
         {
             enemy.TakeDamage(damage);
         }
+        MonsterHealth monster = collision.gameObject.GetComponent<MonsterHealth>();
+        if (monster != null)
+        {
+            monster.TakeDamage(damage);
+        }
 
         // Destroy the bullet on impact
         Destroy(gameObject);
