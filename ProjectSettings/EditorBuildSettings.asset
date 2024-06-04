@@ -35,4 +35,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game Scenes/Boss Room.unity
     guid: 791592ab0f697d94a901decdad191742
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 1d389c8ea3159734592bf27cb2531859, type: 2}
