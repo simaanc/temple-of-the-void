@@ -5,6 +5,7 @@ public class BossProjectile : MonoBehaviour
     private Transform target;
     public float speed = 5f;
     public float lifetime = 5f;
+    public int damage = 1;  // Set the damage value that the projectile will deal to the player
 
     private Rigidbody2D rb;
 
@@ -31,7 +32,16 @@ public class BossProjectile : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Projectile hit: " + other.name + " at: " + Time.time);
-        if (other.CompareTag("Player") || other.CompareTag("Obstacle"))
+        if (other.CompareTag("Player"))
+        {
+            PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(damage);
+            }
+            Destroy(gameObject);
+        }
+        else if (other.CompareTag("Obstacle"))
         {
             Destroy(gameObject);
         }
